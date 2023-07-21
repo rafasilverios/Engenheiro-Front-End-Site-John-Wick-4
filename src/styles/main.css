@@ -24,6 +24,13 @@ h3 {
     color: #fff;
 }
 
+h4 {
+    text-align: center;
+    font-size: 26px;
+    font-weight: normal;
+    color: #fff;
+}
+
 header {
     position: fixed;
     top: 0;
@@ -51,9 +58,13 @@ header a.header-scrolled:hover {
 .container {
     max-width: 1200px;
     width: 100%;
+    margin: 0 auto;
+}
+
+header .container {
     display: flex;
     align-items: center;
-    margin: 0 auto;
+    justify-content: space-between;
 }
 
 header .container h1 {
@@ -140,6 +151,14 @@ a:hover {
 
 #onde-assistir img {
     width: 100%;
+}
+
+#onde-assistir ul li {
+    transition: all ease .5S;
+}
+
+#onde-assistir ul li:hover {
+    transform: scale(1.03);
 }
 
 #onde-assistir a {
@@ -237,6 +256,144 @@ a:hover {
     right: 0;
     bottom: 0;
     background-image: url(../images/fumaca-vermelha.jpg);
-    filter: blur(150px);
+    filter: blur(200px);
     z-index: -1;
 }
+
+#personagens ul li {
+    transition: all ease .3s;
+}
+
+#personagens ul li:hover {
+    transform: scale(1.018);
+}
+
+.grid-6 {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 0 4px;
+}
+
+.grid-6 img {
+    width: 100%;
+}
+
+.grid-3 {
+    display: grid;
+    grid-template-columns: 2.5fr 1fr 2.5fr;
+    gap: 4px;
+    margin-bottom: 4px;
+}
+
+.grid-3 li {
+    list-style: none;
+}
+
+.grid-3 li:nth-child(2) {
+    width: 100%;
+}
+
+.grid-3 img {
+    max-width: 200px;
+    display: block;
+}
+
+.box-nome {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(37, 37, 37);
+    padding: 10px;
+    text-align: center;
+    color: #fff;
+}
+
+.bg-personagens {
+    margin-bottom: 8px;
+    padding: 8px;
+    background-color: rgb(37, 37, 37);
+    border: none;
+    border-radius: none;
+    text-align: center;
+    transition: all ease 0.3s;
+}
+
+.color-name {
+    color: #ff7300;
+    font-weight: bold;
+}
+
+#outros-filmes {
+    padding: 5.6vw;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#outros-filmes ul li {
+    background-color: rgb(37, 37, 37);
+    margin-bottom: 16px;
+    border-radius: 8px;
+}
+
+#outros-filmes ul li img {
+    margin-bottom: -4px;
+}
+
+.filmes-franquia {    
+    color: #fff;
+    font-size: 20px;
+    padding: 24px;
+    display: block;
+    cursor: pointer;
+    position: relative;
+}
+
+.filmes-franquia::after {
+    content: '+';
+    position: absolute;
+    top: 0;
+    right: 24px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+}
+
+.grid-2 {
+    display: grid;
+    grid-template-columns: .6fr 2fr;
+    gap: 20px;
+    padding: 24px;
+    align-items: center;
+}
+
+.title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 24px;
+}
+
+.dp-flex {
+    display: flex;
+}
+
+.dp-flex img {
+    max-width: 75px;
+    margin-top: 42px;
+    margin: 24px 8px 24px 0;
+    cursor: pointer;
+    transition: all ease .3s;
+}
+
+.dp-flex img:hover {
+    transform: scale(1.03);
+}
+
+/* .filme-snopse {    
+    height: 0;
+    overflow: hidden;
+    padding: 0 24px;
+    transition: height, .5s ease;
+} */
