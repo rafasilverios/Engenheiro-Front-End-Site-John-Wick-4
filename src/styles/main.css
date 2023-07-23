@@ -87,7 +87,7 @@ a:hover {
 
 #inicio {
     position: relative;
-    padding: 5.6vw;
+    padding: 100px;
     min-height: 100vh;
     background-image: url(../images/john-wick-4-inicio.png);
     text-align: center;
@@ -129,6 +129,32 @@ a:hover {
 
 .move-down {
     animation: moveArrowDown 1s infinite alternate;
+}
+
+.dp-flex-inicio {
+    display: flex;
+    justify-content: start; 
+    align-items: center;
+    padding: 16px 32px;
+}
+
+.dp-flex-inicio p {
+    margin-right: 16px;
+}
+
+.dp-flex-inicio img:first-child {
+    max-height: 32px;
+    margin: -5px 8px 0 16px;
+}
+
+.dp-flex-inicio img:nth-child(3) {
+    max-height: 48px;
+    margin: -5px 8px 0 16px;
+}
+
+.dp-flex-inicio img:nth-child(5) {
+    max-height: 48px;
+    margin: -5px 8px 0 16px;
 }
 
 #onde-assistir {
@@ -361,12 +387,23 @@ a:hover {
     font-size: 24px;
 }
 
+.filme-snopse {    
+    height: 0;
+    overflow: hidden;
+    padding: 0 24px;
+    transition: height, .5s ease;
+}
+
 .grid-2 {
     display: grid;
     grid-template-columns: .6fr 2fr;
     gap: 20px;
     padding: 24px;
     align-items: center;
+}
+
+.grid-2 .img-poster {
+    width: 270px;
 }
 
 .title {
@@ -377,12 +414,12 @@ a:hover {
 
 .dp-flex {
     display: flex;
+    margin: 42px 0;
 }
 
 .dp-flex img {
     max-width: 75px;
-    margin-top: 42px;
-    margin: 24px 8px 24px 0;
+    margin-right: 8px;
     cursor: pointer;
     transition: all ease .3s;
 }
@@ -394,19 +431,34 @@ a:hover {
 .dp-flex-notas {
     display: flex;
     justify-content: end; 
+    align-items: center;
+    margin-top: 60px;
 }
 
-.dp-flex-notas img {
-    max-height: 60px;
-    margin-top: 42px;
-    margin: 24px 8px 24px 0;
-    cursor: pointer;   
-    transition: all ease .3s;
+.dp-flex-notas p {
+    margin-right: 16px;
 }
 
-/* .filme-snopse {    
-    height: 0;
-    overflow: hidden;
-    padding: 0 24px;
-    transition: height, .5s ease;
-} */
+.dp-flex-notas img:first-child {
+    max-height: 32px;
+    margin: -5px 8px 0 16px;
+}
+
+.dp-flex-notas img:nth-child(3) {
+    max-height: 48px;
+    margin: -5px 8px 0 16px;
+}
+
+.dp-flex-notas img:nth-child(5) {
+    max-height: 48px;
+    margin: -5px 8px 0 16px;
+}
+
+.text-small {
+    font-size: 13px;
+    color: #ffffff9d;
+}
+
+.text-big{
+    font-size: 28px;
+}
