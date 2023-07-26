@@ -20,14 +20,6 @@
     </header>
 
     <section id="inicio">
-        <div class="dp-flex-inicio container">
-            <img src="./src/images/icons/estrela-imdb.png" alt="Nota IMDb">
-            <p>IMdb 7,8 / 10 <br><span class="text-small">245 mil</span></p>
-            <img src="./src/images/icons/rotten-tomatoes-certified.png" alt="Nota Rotten Tomatoes Criticos">
-            <p><span class="text-big">94%</span> <br><span class="text-small mt--20">Tomatometer</span></p>
-            <img src="./src/images/icons/rotten-tomatoes.png" alt="Nota Rotten Tomatoes Publico">                                
-            <p><span class="text-big">93%</span> <br><span class="text-small mt--20">Audience Score</span></p>
-        </div>
         <div>
             <a href="#onde-assistir">
                 <div class="arrow down move-down"></div>
@@ -171,8 +163,8 @@
         <div class="container">            
         <h3>Outros Filmes da Franquia</h3>
         <ul>
-            <li>
-                <div class="filmes-franquia" data-faq-question>
+            <li class="filmes-franquia">
+                <div class="filmes-franquia-content" data-outro-filme>
                     <img src="./src/images/logos/jw1.png" alt="Logo John Wick 1">
                 </div>
                 <div class="filme-snopse">
@@ -193,7 +185,7 @@
                             </div>
                             <div class="dp-flex-notas">
                                 <img src="./src/images/icons/estrela-imdb.png" alt="Nota IMDb">
-                                <p>IMdb 7,4 / 10 <br><span class="text-small">245 mil</span></p>
+                                <p class="text-mobile">IMdb 7,4 / 10 <br><span class="text-small">245 mil</span></p>
                                 <img src="./src/images/icons/rotten-tomatoes-certified.png" alt="Nota Rotten Tomatoes Criticos">
                                 <p><span class="text-big">86%</span> <br><span class="text-small mt--20">Tomatometer</span></p>
                                 <img src="./src/images/icons/rotten-tomatoes.png" alt="Nota Rotten Tomatoes Publico">                                
@@ -204,8 +196,8 @@
                 </div>
             </li>
 
-            <li>
-                <div class="filmes-franquia" data-faq-question>
+            <li class="filmes-franquia">
+                <div class="filmes-franquia-content" data-outro-filme>
                     <img src="./src/images/logos/jw2.png" alt="Logo John Wick 2">
                 </div>
                 <div class="filme-snopse">
@@ -228,7 +220,7 @@
                             </div>
                             <div class="dp-flex-notas">
                                 <img src="./src/images/icons/estrela-imdb.png" alt="Nota IMDb">
-                                <p>IMdb 7,4 / 10 <br><span class="text-small">485 mil</span></p>
+                                <p class="text-mobile">IMdb 7,4 / 10 <br><span class="text-small">485 mil</span></p>
                                 <img src="./src/images/icons/rotten-tomatoes-certified.png" alt="Nota Rotten Tomatoes Criticos">
                                 <p><span class="text-big">89%</span> <br><span class="text-small mt--20">Tomatometer</span></p>
                                 <img src="./src/images/icons/rotten-tomatoes.png" alt="Nota Rotten Tomatoes Publico">                                
@@ -239,8 +231,8 @@
                 </div>
             </li>
 
-            <li>
-                <div class="filmes-franquia" data-faq-question>
+            <li class="filmes-franquia">
+                <div class="filmes-franquia-content" data-outro-filme>
                     <img src="./src/images/logos/jw3.png" alt="Logo John Wick 3">
                 </div>
                 <div class="filme-snopse">
@@ -263,7 +255,7 @@
                             </div>
                             <div class="dp-flex-notas">
                                 <img src="./src/images/icons/estrela-imdb.png" alt="Nota IMDb">
-                                <p>IMdb 7,4 / 10 <br><span class="text-small">399 mil</span></p>
+                                <p class="text-mobile">IMdb 7,4 / 10 <br><span class="text-small">399 mil</span></p>
                                 <img src="./src/images/icons/rotten-tomatoes-certified.png" alt="Nota Rotten Tomatoes Criticos">
                                 <p><span class="text-big">89%</span> <br><span class="text-small mt--20">Tomatometer</span></p>
                                 <img src="./src/images/icons/rotten-tomatoes.png" alt="Nota Rotten Tomatoes Publico">                                
@@ -276,7 +268,21 @@
         </ul>
         </div>
     </section>
-    
+
+    <footer id="footer" class="container">
+        <div class="footer-content">
+            <img src="./src/images/logos/jw-franchise.png" alt="Logo Franquia John Wick">
+        </div>
+        <div class="links">
+            <ul>
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#onde-assistir">Onde assistir</a></li>
+                <li><a href="#personagens">Atores/Atrizes e seus Personagens</a></li>
+                <li><a href="#outros-filmes">Outros filmes da Franquia</a></li>
+            </ul>
+        </div>
+        <p class="text-small"> ⓒ 2023 Lions Gate Entertainment Inc. and affiliated companies. All Rights Reserved. </p>
+    </footer>    
 
     <script src="./src/scripts/main.js"></script>
 </body>
